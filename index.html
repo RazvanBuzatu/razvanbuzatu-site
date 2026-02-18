@@ -32,17 +32,26 @@
 				<footer>
 					<ul class="icons">
 						<li>
-							<a href="https://www.linkedin.com/in/razvan-buzatu/" class="icon brands fa-linkedin-in">
+							<a href="https://www.linkedin.com/in/razvan-buzatu/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="icon brands fa-linkedin-in">
 								<span class="label">LinkedIn</span>
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/razvan.buzatu.rb/" class="icon brands fa-instagram">
+							<a href="https://www.instagram.com/razvan.buzatu.rb/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="icon brands fa-instagram">
 								<span class="label">Instagram</span>
 							</a>
 						</li>
 						<li>
-							<a href="mailto:contact@razvanbuzatu.com" class="icon solid fa-envelope">
+							<a href="mailto:contact@razvanbuzatu.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="button alt icon solid fa-download">
 								<span class="label">Email</span>
 							</a>
 						</li>
@@ -529,5 +538,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				});
 			</script>
 
+			<script>
+				document.querySelectorAll('a[href^="http"]').forEach(a => {
+				a.setAttribute('target', '_blank');
+				a.setAttribute('rel', 'noopener noreferrer');
+				});
+			</script>
 	</body>
 </html>
